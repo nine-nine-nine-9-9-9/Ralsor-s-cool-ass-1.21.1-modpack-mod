@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "ralsors-utdr-stuffs",
+	"version": "${version}",
+	"name": "Ralsor's utdr stuffs",
+	"description": "Badass mod for a badass modpack!",
+	"authors": [
+		"Ralsor!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/ralsors-utdr-stuffs/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.ralsor.ralsorsutdrstuffs.RalsorsUtdrStuffs"
+		],
+		"fabric-datagen": [
+			"com.ralsor.ralsorsutdrstuffs.RalsorsUtdrStuffsDataGenerator"
+		],
+		"client":[
+			"com.ralsor.ralsorsutdrstuffs.RalsorsUtdrStuffsClient"
+		]
+	},
+	"mixins": [
+		"ralsors-utdr-stuffs.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.4",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
